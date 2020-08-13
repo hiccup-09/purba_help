@@ -1,4 +1,25 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
+    show
+        BoxDecoration,
+        BoxFit,
+        BoxShape,
+        BuildContext,
+        Center,
+        Color,
+        Colors,
+        Column,
+        Container,
+        DecorationImage,
+        Drawer,
+        EdgeInsets,
+        Icon,
+        Icons,
+        ListTile,
+        NetworkImage,
+        StatelessWidget,
+        Text,
+        TextStyle,
+        Widget;
 
 class MainDrawer extends StatelessWidget {
   @override

@@ -1,4 +1,13 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
+    show
+        BorderRadius,
+        BoxDecoration,
+        BoxShadow,
+        Color,
+        Colors,
+        FontWeight,
+        Offset,
+        TextStyle;
 
 final kHintTextStyle = TextStyle(
   color: Colors.white54,

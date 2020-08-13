@@ -31,14 +31,15 @@ class _MyAppState extends State<MyApp> {
 class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var appBar2 = AppBar(
+      leading: IconButton(icon: Icon(Icons.menu), onPressed: () {}),
+      title: Text("Homescreen"),
+      actions: <Widget>[
+        IconButton(icon: Icon(Icons.search), onPressed: () {}),
+      ],
+    );
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(icon: Icon(Icons.menu), onPressed: () {}),
-        title: Text("Homescreen"),
-        actions: <Widget>[
-          IconButton(icon: Icon(Icons.search), onPressed: () {}),
-        ],
-      ),
+      appBar: appBar2,
       drawer: MainDrawer(),
       body: Stack(
         children: <Widget>[
@@ -46,7 +47,7 @@ class Homescreen extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: NetworkImage(
-                      'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.businesspost.ie%2Fcommercial-reports%2Fshaping-the-future-of-healthcare-2fc1b3ec&psig=AOvVaw1Dy8tE2CFoGp729NlARJ0W&ust=1596657926428000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjrrLqsgusCFQAAAAAdAAAAABAz'),
+                      'https://img.resized.co/businesspost/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvaW1lbmdpbmUucHVibGljLnByb2Quc2JwLmluZm9tYWtlci5pbz91dWlkPWM2YjNiOGRiLTZmMTktNTI3MS05ZjlkLWZlOTJiZWRhNDAzMyZ0eXBlPXByZXZpZXcmcT04MCZmdW5jdGlvbj1vcmlnaW5hbFwiLFwid2lkdGhcIjo3NjUsXCJoZWlnaHRcIjo0ODUsXCJkZWZhdWx0XCI6XCJodHRwOlxcXC9cXFwvczMtZXUtd2VzdC0xLmFtYXpvbmF3cy5jb21cXFwvc3RvcmFnZS5wdWJsaXNoZXJwbHVzLmllXFxcL21lZGlhLmJ1c2luZXNzcG9zdC5pZVxcXC9zYnAtbm8taW1hZ2UucG5nXCJ9IiwiaGFzaCI6IjhjODg1MWZmMDBjZWNjMjQ5MGY1NWQyNmNkNjQ2NmVjMDcxNGRmMmQifQ==/shaping-the-future-of-healthcare.io?uuid=c6b3b8db-6f19-5271-9f9d-fe92beda4033&type=preview&q=80&function=original'),
                   fit: BoxFit.cover),
             ),
           ),
